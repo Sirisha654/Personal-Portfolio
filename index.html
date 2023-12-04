@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirisha's portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(13, 13, 74);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(223, 68, 164);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(26, 26, 26);
+            font-size: 1.01rem;
+        }
+
+        header.sticky {
+            padding: 15px 11%;
+            background: rgb(223, 68, 164);
+            border-bottom: 1px solid black;
+        }
+
+        #menu-icon {
+            font-size: 42px;
+            color: var(--text-color);
+            z-index: 10001;
+            cursor: pointer;
+            display: none;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+
+
+        }
+
+        .rightSection img {
+            width: 100%;
+        }
+
+        .purple {
+            color: rgb(223, 68, 164);
+        }
+
+        #element {
+            color: rgb(223, 68, 164);
+        }
+
+        .secondSection {
+            max-width: 50vw;
+            margin: auto;
+            height: 1px;
+        }
+
+        .about {
+            width: 100%;
+            padding: 100px 0px;
+            background-color: rgb(13, 13, 74);
+            ;
+        }
+
+        .about img {
+            height: auto;
+
+        }
+
+        .about-text {
+            width: 550px;
+        }
+
+        .main {
+            width: 1130px;
+            max-width: 95%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about-text h2 {
+            font-size: 75px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        header.sticky {
+            padding: 15px 11%;
+            background: #000;
+            border-bottom: 1px solid #4e5055;
+        }
+        .contact{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 84px;
+           width: 100%
+            
+        }
+        .contact form{
+            text-align: center;
+            max-width: 50rem;
+            margin: 1rem auto;
+            margin-bottom: 3rem;
+        
+        }
+        .contactform input,
+        .contact form textarea{
+            width: 80%;
+            color: var(--text-color);
+            background-color:rgb(223, 68, 164);
+            margin-bottom: .8rem;
+            border: none;
+            border-radius: 4px;
+            padding: .7rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sirisha's Portfolio</div>
+            <div class="right">
+                <div class="bx bx-menu" id="menu-icon"></div>
+
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <section class="firstSection" id="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="purple"> Sirisha </span>
+                    <div>and I am a Engineering student</div>
+                    <span id="element"></span>
+
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png2.png" alt="">
+
+                </div>
+            </section>
+        </section>
+        <hr>
+        <section class="secondSection"></section>
+        <h1></h1>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['of 3rd Year', 'CSE-AIML.'],
+            typeSpeed: 80,
+        });
+    </script>
+
+    <!--About Section-->
+    <section class="About" id="About">
+        <div class="main">
+            <img src="img.png" alt style="
+                width: 30%;
+                ">
+            <div class="about-text">
+                <h2 style="color:   rgb(223, 68, 164);">About </h2>
+                <p>Hi. I'm a Computer Science & Engineering student at Visvesvaraya Technological University.
+                    My interests mostly include Web & Mobile App Development,Web Design & programmable matter.
+                    Recently, I have also begun learning AI & Machine learning. I will do my best to learn on
+                    advance era of technology and improve my skills in various aspects.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <div class="main-text">
+
+            <span style="margin: 60px;" >Ask me a question</span>
+            <h2 style="margin: 55px; color: crimson;">Contact Me </h2>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="number" placeholder="Your Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message" style="color: black;"></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>
